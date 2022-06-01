@@ -1,3 +1,5 @@
+<!-- WHEN YOU SIT BACK DOWN GET BACK ON THE ARTICLE FOR THE SHOPIFY PAGE  -->
+
 <div class="max-w-md">
     <div class="text-5xl font-bold my-4">{{ section.settings.title }}</div>
     <div class="my-4">
@@ -9,7 +11,9 @@
         {% else %}
             {% assign shop_url = section.settings.button_url %}
         {% endif %}
-        <a href="{{  }}"> {{section.settings.button_label}} </a>
+        <a href="{{ shop_url }}" class="px-4 inline py-2 text-base font-medium shadow bg-green-600 hover:bg-green-800 text-white rounded-lg"> 
+            {{section.settings.button_label}} 
+        </a>
     </div>
 </div>
 

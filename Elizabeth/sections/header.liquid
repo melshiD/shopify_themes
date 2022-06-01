@@ -1,5 +1,5 @@
 {% if section.settings.poop.links == blank %}
-    {% assign main_menu_linklist - linklists[section.settings.menu].links %}
+    {% assign main_menu_linklist = linklists[section.settings.menu].links %}
 {% else %}
     {% assign main_menu_linklist = section.settings.poop.links %}
 {% endif %}
@@ -125,7 +125,7 @@
 </div>
 {% schema %}
 {
-    "name": "SillyNameTesting",
+    "name": "Header From header.liquid",
     "settings": [
         {
             "type": "text",
