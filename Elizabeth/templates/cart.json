@@ -1,0 +1,12 @@
+{
+  "name": "cart",
+  "sections": {
+    "template": {
+      "type": "template-cart"
+    }
+  },
+  "order": ["template"]
+}
+
+
+//WHEN YOU SIT BACK DOWN GET THE CART TO DISPLAY AND GET THE SETTINGS ON THE ARTICLE TO WORK!
