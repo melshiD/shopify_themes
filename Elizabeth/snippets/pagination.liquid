@@ -1,0 +1,17 @@
+{% if mined_paginate.pages > 0 %}
+    <nav role="navigation" class="flex justify-center my-8">
+        {% if mined_paginate.previous %}
+            <a href="{{ mined_paginate.previous.url }}" class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium">{{ mined_paginate.previous.title }}</a> 
+        {% endif %}
+        {% for part in mined_paginate.parts %}
+            {% if part.is_link %}
+                <a href="{{ part.url }}" class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium">{{ part.title }}</a>
+            {% else %}
+                <span class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium">{{ part.title }}</span>
+            {% endif %}
+        {% endfor %}
+        {% if mined_paginate.next %}
+            <a href="{{ mined_paginate.next.url }}" class="border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-3 mx-1 rounded-sm font-medium">{{ mined_paginate.next.title }}</a>
+        {% endif %}
+    </nav>
+{% endif %}

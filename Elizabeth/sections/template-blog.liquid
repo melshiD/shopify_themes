@@ -39,7 +39,9 @@
                 {% endfor %}
             </div>
         </div>
-
+        <div class="max-w-6xl mx-auto">
+            {% render 'pagination', mined_paginate: paginate %}
+        </div>
     {% endpaginate %}
 </div>
 
